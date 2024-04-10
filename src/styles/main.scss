@@ -1,0 +1,58 @@
+@use 'hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$corDeFundo:#040714;
+$corTextoPrincipal:silver;
+$corTextoSecundario:#f9f9f9;
+
+body{
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize:16px){//definindo um mixin onde os textos deveram ter um font-size que poderá ser alterado
+    //e a altura da linha deverá sempre ser 10px a mais, e cor será do texto principal
+    //todas as classes que utilizarem esse mixin herdarão isso.
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin titlle($fontSize:40px){
+    @include text($fontSize);
+    color: $corTextoSecundario
+}
+
+.text--big{
+    @include text(18px); //estamos passando outro valor para o fonte size
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.title--big{
+    @include titlle(44px);
+}
+
+.title{
+    @include titlle;
+}
+
+.title--small{
+    @include titlle(28px);
+}
+
+.link-text{
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
+}
