@@ -1,17 +1,14 @@
+@use 'variaveis';
 @use 'hero';
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$corDeFundo:#040714;
-$corTextoPrincipal:silver;
-$corTextoSecundario:#f9f9f9;
 
 body{
-    background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
 }
 
 @mixin text($fontSize:16px){//definindo um mixin onde os textos deveram ter um font-size que poderá ser alterado
@@ -19,12 +16,12 @@ body{
     //todas as classes que utilizarem esse mixin herdarão isso.
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 @mixin titlle($fontSize:40px){
     @include text($fontSize);
-    color: $corTextoSecundario
+    color: variaveis.$corTextoSecundario
 }
 
 .text--big{
@@ -53,6 +50,6 @@ body{
 
 .link-text{
     @include text(18px);
-    color: $corTextoSecundario;
+    color: variaveis.$corTextoSecundario;
     text-decoration: underline;
 }
