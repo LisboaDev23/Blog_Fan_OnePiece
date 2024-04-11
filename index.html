@@ -7,33 +7,207 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="./src/images/logos/One-Piece-Logo.png" alt="one-piece">
-            </h1>
-            <h3 class="title--small">
-                Conheça mais sobre as incríveis aventuras de Luffy e seu bando em busca do One Piece
-            </h3>
-            <p>
-                <a href="#" class="link-text">Faça parte da comunidade de fãs!</a>
-                <br>
-                <span class="text">Crie uma conta ou faça login na nossa plataforma de piratas em busca do One Piece!</span>
-            </p>
-            <ul class="hero__content__opcoes">
-                <li class="hero__content__opcoes__opcao">
-                    <img src="./src/images/personagens/Luffy.png" alt="luffy">
-                    <button>FAÇA LOGIN</button>
-                </li>
-                <li class="hero__content__opcoes__opcao">
-                    <img src="./src/images/personagens/Zoro.png" alt="zoro">
-                    <button>CRIAR CONTA</button>
-                </li>
-            </ul>
-            <p class="text--small">
-                Ao criar a conta, certifique-se de aceitar os termos e acordos para sua privacidade.
-            </p>
-        </div>
+    <div class="container">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content__branding">
+                    <img src="./dist/images/logos/One-Piece-Logo.png" alt="one-piece">
+                </h1>
+                <h3 class="title--small">
+                    Conheça mais sobre as incríveis aventuras de Luffy e seu bando em busca do One Piece
+                </h3>
+                <p>
+                    <a href="#" class="link-text">Faça parte da comunidade de fãs!</a>
+                    <br>
+                    <span class="text">Crie uma conta ou faça login na nossa plataforma de piratas em busca do One Piece!</span>
+                </p>
+                <ul class="hero__content__opcoes">
+                    <li class="hero__content__opcoes__opcao">
+                        <img src="./src/images/personagens/Luffy.png" alt="luffy">
+                        <button>FAÇA LOGIN</button>
+                    </li>
+                    <li class="hero__content__opcoes__opcao">
+                        <img src="./src/images/personagens/Zoro.png" alt="zoro">
+                        <button>CRIAR CONTA</button>
+                    </li>
+                </ul>
+                <p class="text--small">
+                    Ao criar a conta, certifique-se de aceitar os termos e acordos para sua privacidade.
+                </p>
+            </div>
     </section>
+    <section class="shows">
+        <nav class="shows__options">
+            <button data-tab-button="bando" class="shows__options__item shows__options__item--is-active">
+                BANDO
+            </button>
+            <button data-tab-button="viloes" class="shows__options__item">
+                VILÕES
+            </button>
+            <button data-tab-button="arco" class="shows__options__item">
+                ARCOS
+            </button>
+        </nav>
+
+        <ul data-tab-id="bando" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/luffy2 (2).png" alt="luffy-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/zoro_2-removebg-preview.png" alt="zoro">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/nami-removebg-preview.png" alt="nami-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/chopperzinho-removebg-preview.png" alt="chopper-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/sanji-removebg-preview.png" alt="sanji-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/franky-removebg-preview.png" alt="franky-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/robin-removebg-preview.png" alt="robin-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/jinbe-removebg-preview.png" alt="jinbe-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/brook-removebg-preview.png" alt="brook-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/usopp-removebg-preview.png" alt="usopp-personagem">
+                </a>
+            </li>
+        </ul>
+        <ul data-tab-id="viloes" class="shows__list">
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/luffy2 (2).png" alt="luffy-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/zoro_2-removebg-preview.png" alt="zoro">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/nami-removebg-preview.png" alt="nami-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/chopperzinho-removebg-preview.png" alt="chopper-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/sanji-removebg-preview.png" alt="sanji-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/franky-removebg-preview.png" alt="franky-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/robin-removebg-preview.png" alt="robin-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/jinbe-removebg-preview.png" alt="jinbe-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/brook-removebg-preview.png" alt="brook-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/usopp-removebg-preview.png" alt="usopp-personagem">
+                </a>
+            </li>
+        </ul>
+        <ul data-tab-id="arco" class="shows__list">
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/luffy2 (2).png" alt="luffy-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/zoro_2-removebg-preview.png" alt="zoro">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/nami-removebg-preview.png" alt="nami-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/chopperzinho-removebg-preview.png" alt="chopper-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/sanji-removebg-preview.png" alt="sanji-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/franky-removebg-preview.png" alt="franky-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/robin-removebg-preview.png" alt="robin-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/jinbe-removebg-preview.png" alt="jinbe-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/brook-removebg-preview.png" alt="brook-personagem">
+                </a>
+            </li>
+            <li class="shows__list__item">
+                <a href="#">
+                    <img src="./src/images/personagens/person-show/usopp-removebg-preview.png" alt="usopp-personagem">
+                </a>
+            </li>
+        </ul>
+    </section>
+    </div>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
