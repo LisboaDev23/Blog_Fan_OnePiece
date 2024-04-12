@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll("[data-tab-button]"); //pegando todos os botões com essa propriedade []
-
     for(let i = 0; i < buttons.length; i++){
         buttons[i].addEventListener("click", function(botao){
             const targetButton = botao.target.dataset.tabButton;//estou pegando o valor do alvo do botão, nesse caso o alvo é um <ul> que esteja marcado com o valor do botao
@@ -10,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function(){
         //do dataset, isso foi feito com a observação do professor.
             escondendoAbas();
             containerTargetButton.classList.add("shows__list--is-active"); //adiciono no <ul> que tiver sido clicado, a classe active
-
+            desativandoBotoes();
+            const buttonMain = document.querySelector(`[data-tab-button = ${targetButton}]`);
+            buttonMain.classList.add("shows__options__item--is-active");
         })
     }
 })
@@ -19,5 +20,12 @@ function escondendoAbas(){
     const containerTabs = document.querySelectorAll("[data-tab-id]"); //pegando todos as <ul> que possuem esse atributo para manipularmos seus valores
     for(let i = 0; i < containerTabs.length; i++){//percorra todos os <ul>
         containerTabs[i].classList.remove("shows__list--is-active");//pegue a classe dessa lista e remova a classe active
+    }
+}
+
+function desativandoBotoes(){
+    const buttons = document.querySelectorAll("[data-tab-button]");
+    for(let i = 0; i < buttons.length; i++){
+        buttons[i].classList.remove("shows__options__item--is-active");
     }
 }

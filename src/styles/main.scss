@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'breakpoints';
 
 @font-face {
     font-family: 'One-Piece-Font';
@@ -19,8 +20,13 @@
 body{
     background-image: url(../../dist/images/fundo/fundo-principal.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+}
+@media screen and (max-width:1500px) {
+    body{
+        background-image: url("../../dist/images/fundo/Logo-2.jpg");
+        background-attachment: fixed;
+    }
 }
 
 .container{
